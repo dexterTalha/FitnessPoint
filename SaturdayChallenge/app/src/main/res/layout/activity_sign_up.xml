@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:animateLayoutChanges="true"
+    tools:context=".LoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:background="@android:color/transparent"
+        android:id="@+id/appbar_signup"
+        android:layout_alignParentTop="true"
+        app:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_signup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="SIGN UP"
+                android:id="@+id/signup"
+                android:transitionName="text_up"
+                tools:targetApi="lollipop"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/hero"
+                android:textStyle="bold|italic"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_below="@id/appbar_signup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:gravity="start"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:transitionName="imglogo"
+            tools:targetApi="lollipop"
+            android:id="@+id/signup_logo"
+            android:src="@drawable/logo_dark"
+            android:layout_gravity="top"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="8dp"
+            android:padding="7dp"
+            app:hintTextAppearance="@style/mytext"
+            app:hintEnabled="true"
+            app:hintAnimationEnabled="true"
+            android:hint="Username/Email"
+            android:textColorHint="#e3f1f1f1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:inputType="text"
+                android:textColor="@android:color/white"
+                android:imeOptions="actionNext"
+                android:backgroundTint="@android:color/white"
+                android:drawableStart="@drawable/ic_user_24dp"
+                android:padding="5dp"
+                android:drawablePadding="5dp"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                tools:targetApi="lollipop" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="5dp"
+            android:padding="7dp"
+            app:hintTextAppearance="@style/mytext"
+            app:hintEnabled="true"
+            app:hintAnimationEnabled="true"
+            android:hint="Password"
+            android:textColorHint="#e3f1f1f1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:imeOptions="actionNext"
+                android:textColor="@android:color/white"
+                android:inputType="textPassword"
+                android:backgroundTint="@android:color/white"
+                android:drawableStart="@drawable/ic_lock_24dp"
+                android:padding="5dp"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                tools:targetApi="lollipop" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="5dp"
+            android:padding="7dp"
+            app:hintTextAppearance="@style/mytext"
+            app:hintEnabled="true"
+            app:hintAnimationEnabled="true"
+            android:hint="Confirm Password"
+            android:textColorHint="#e3f1f1f1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:imeOptions="actionNext"
+                android:textColor="@android:color/white"
+                android:inputType="textPassword"
+                android:backgroundTint="@android:color/white"
+                android:drawableStart="@drawable/ic_lock_open_black_24dp"
+                android:padding="5dp"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                tools:targetApi="lollipop" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="5dp"
+            android:padding="7dp"
+            app:hintTextAppearance="@style/mytext"
+            app:hintEnabled="true"
+            app:hintAnimationEnabled="true"
+            android:hint="Mobile Number"
+            android:textColorHint="#e3f1f1f1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@android:color/white"
+                android:imeOptions="actionNext"
+                android:backgroundTint="@android:color/white"
+                android:drawableStart="@drawable/ic_phone_iphone_black_24dp"
+                android:padding="5dp"
+                android:drawablePadding="5dp"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                tools:targetApi="lollipop" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:text="SIGN UP"
+            android:textColorHighlight="#ffffff"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:layout_height="50dp"
+            android:background="@drawable/login_btn_back"
+            android:layout_width="match_parent"
+
+            />
+        <TextView
+            android:text="Login Here"
+            android:transitionName="textlogin"
+            tools:targetApi="lollipop"
+            android:id="@+id/text_login"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
